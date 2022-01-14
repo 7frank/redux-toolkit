@@ -52,6 +52,7 @@
     "pretty-quick": "^3.1.0",
     "ts-jest": "^26.4.4",
     "ts-node": "^10.4.0",
+    "ts-to-zod": "^1.8.0",
     "yalc": "^1.0.0-pre.47"
   },
   "dependencies": {

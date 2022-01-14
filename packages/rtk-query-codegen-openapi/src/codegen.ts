@@ -35,6 +35,9 @@ export function generateCreateApiCall({
   endpointBuilder?: ts.Identifier;
   endpointDefinitions: ts.ObjectLiteralExpression;
 }) {
+
+  // TODO find out how to replace interfaces & inject with ts-to-zod generated nodes
+
   return factory.createVariableStatement(
     undefined,
     factory.createVariableDeclarationList(
@@ -68,7 +71,7 @@ export function generateCreateApiCall({
                     ],
                     undefined,
                     factory.createToken(ts.SyntaxKind.EqualsGreaterThanToken),
-                    factory.createParenthesizedExpression(endpointDefinitions)
+                    factory.createParenthesizedExpression(endpointDefinitions)              
                   ),
                   overrideExisting: factory.createFalse(),
                 }),
