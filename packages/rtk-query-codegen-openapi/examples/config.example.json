@@ -1,0 +1,5 @@
+{
+  "schemaFile": "./petstore.json",
+  "apiFile": "./emptyApi.ts",
+  "outputFile": "./petstore.generated.ts"
+}
